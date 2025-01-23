@@ -18,6 +18,18 @@ const app = Vue.createApp({
             ],
             count: 0
         }
+    },
+    // 方法區域(函式)
+    methods: {
+        // 方法名稱(){}
+        test() {
+            console.log('不要再點了');
+        },
+        methonEvent(e) {
+            console.log(e);
+            console.log(e.target);
+            console.log(e.x, e.y);
+        }
     }
 });
 

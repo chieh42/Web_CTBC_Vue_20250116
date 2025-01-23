@@ -38,7 +38,18 @@
         <h3>數字:{{ count }}</h3>
         <div class="btn" v-on:mouseover="count++">滑我</div>
         <h3>數字:{{ count }}</h3>
+        <!-- v-on 簡寫 @ -->
+        <div class="btn" @click="count++">事件簡寫:點我</div>
+        <h3>數字:{{ count }}</h3>
+        <!-- 一次性事件 -->
+        <div class="btn" @click.once="count++">點擊一次事件</div>
+        <h3>數字:{{ count }}</h3>
+        <div class="btn" @click.right="count++">點擊右鍵事件</div>
+        <h3>數字:{{ count }}</h3>
 
+        <h1>七. Var 方法(函式) function 等於 methon </h1>
+        <div class="btn" @click="test">點擊後會呼叫測試方式</div>
+        <div class="btn" @click="methonEvent">點擊後會獲得點擊事件的資料</div>
     </div>
 
     <!-- 在安裝的元素外無法使用資料 -->
